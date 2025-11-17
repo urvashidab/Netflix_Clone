@@ -7,10 +7,10 @@ import caret from "../../assets/caret_icon.svg";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between  gap-8">
+    <nav className="flex justify-between  gap-8 fixed w-full z-1 py-6 px-8 md:px-12 lg:px-14 xl:px-32 ">
       {/* left side part */}
       <div className="flex justify-center items-center gap-8">
-        <img alt="logo" src={logo}></img>
+        <img alt="logo" src={logo} className="w-30"></img>
 
         {/* list */}
 
