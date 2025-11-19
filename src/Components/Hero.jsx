@@ -33,12 +33,12 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="flex gap-4 mt-2">
-          <button className="flex items-center gap-3 bg-white text-black font-semibold px-6 py-2 rounded-md hover:bg-gray-200 transition">
+          <button className="flex items-center gap-3 bg-white text-black font-semibold px-6 py-2 cursor-pointer rounded-md hover:bg-gray-200 transition">
             <img src={play_icon} alt="play icon" className="w-6" />
             Play
           </button>
 
-          <button className="flex items-center gap-3 bg-gray-500/80 text-white px-6 py-2 rounded-md hover:bg-gray-500 transition">
+          <button className="flex items-center gap-3 bg-gray-500/80 text-white px-6 py-2 cursor-pointer rounded-md hover:bg-gray-500 transition">
             <img src={info_icon} alt="info icon" className="w-6" />
             More Info
           </button>
