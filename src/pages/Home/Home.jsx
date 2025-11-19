@@ -1,10 +1,12 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
+import Hero from "../../Components/Hero";
 
 const Home = () => {
   return (
-    <div className="text-shadow-blue-900">
+    <div>
       <Navbar />
+      <Hero />
     </div>
   );
 };
