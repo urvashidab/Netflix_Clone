@@ -7,9 +7,9 @@ import caret from "../../assets/caret_icon.svg";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between  gap-8 fixed w-full z-10 py-6 px-8 md:px-12 lg:px-14 xl:px-32 backdrop-blur-md ">
+    <nav className="flex navbarStyle justify-between  gap-8 fixed w-full z-10 py-6 px-8 md:px-12 lg:px-14 xl:px-32 backdrop-blur-md ">
       {/* left side part */}
-      <div className="flex justify-center items-center gap-8">
+      <div className="flex justify-center items-center gap-12">
         <img alt="logo" src={logo} className="w-32"></img>
 
         {/* list */}
@@ -31,9 +31,12 @@ const Navbar = () => {
 
         <img src={bell} alt="bell_icon"></img>
 
-        <div className="flex justify-center items-center gap-4">
-          <img src={profile} alt="profile_icon"></img>
+        <div className="flex justify-center items-center gap-4 relative group ">
+          <img src={profile} alt="profile_icon" className="rounded-xs"></img>
           <img src={caret} alt="caret_icon"></img>
+          <div className="absolute w-max right-0 z-10 py-2 px-4 top-8 rounded-xs  bg-[#191919] hidden group-hover:block shadow-lg">
+            <p className="cursor-pointer hover:text-gray-300 ">Sign Out</p>
+          </div>
         </div>
       </div>
     </nav>
