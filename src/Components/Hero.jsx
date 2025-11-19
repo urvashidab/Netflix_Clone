@@ -3,10 +3,11 @@ import hero_tittle from "../../src/assets/hero_title.png";
 import hero_banner from "../../src/assets/hero_banner.jpg";
 import play_icon from "../assets/play_icon.png";
 import info_icon from "../assets/info_icon.png";
+import TitleCards from "./TitleCards";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen ">
+    <div className="relative w-full min-h-screen overflow-hidden">
       {/* Background Image */}
       <img
         src={hero_banner}
@@ -14,11 +15,14 @@ const Hero = () => {
         className="absolute inset-0 w-full h-full object-cover -z-10"
       />
 
-      {/* Overlay  slight dark overlay */}
+      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50 -z-10"></div>
 
+      {/* Netflix-Style Bottom Fade */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80 -z-0"></div>
+
       {/* Content */}
-      <div className="h-full flex flex-col justify-center gap-6 px-8 md:px-12 lg:px-20 xl:px-32">
+      <div className="relative flex flex-col justify-center gap-6 px-8 md:px-12 lg:px-20 xl:px-32 pt-32 pb-12">
         <img
           src={hero_tittle}
           alt="titleImage"
@@ -42,6 +46,11 @@ const Hero = () => {
             <img src={info_icon} alt="info icon" className="w-6" />
             More Info
           </button>
+        </div>
+
+        {/* Title Cards */}
+        <div className="mt-8">
+          <TitleCards />
         </div>
       </div>
     </div>
